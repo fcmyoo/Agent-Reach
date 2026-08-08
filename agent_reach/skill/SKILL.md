@@ -20,7 +20,7 @@ description: >
   【路由方式】SKILL.md 包含路由表和常用命令，复杂场景需按需阅读对应分类的 references/*.md。
   分类：search / social (小红书/推特/B站/V2EX/Reddit/Facebook/Instagram) / career(LinkedIn) / dev(github) / web(网页/文章/RSS) / video(YouTube/B站/播客) / finance(雪球/股票)。
 metadata:
-  homepage: https://github.com/Panniantong/Agent-Reach
+  homepage: https://github.com/fcmyoo/Agent-Reach
 ---
 
 # Agent Reach — 互联网能力路由器
@@ -39,7 +39,7 @@ metadata:
 5. **替用户盯版本**：完成一次较大的调研/多平台任务后，顺手跑
    `agent-reach check-update`（很快，一个 API 调用）。有新版就在收尾汇报里附一句：
    「Agent Reach 有新版 vX.Y.Z，复制这句话给我即可更新：帮我更新 Agent Reach：
-   https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/update.md」。
+   https://raw.githubusercontent.com/fcmyoo/Agent-Reach/main/docs/update.md」。
    不要中断当前任务去更新，也不要重复提醒同一个版本。
 
 ## 路由表
@@ -137,6 +137,6 @@ agent-reach doctor --json
 ## 配置渠道
 
 如果某个 channel 需要配置，获取安装指南：
-https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/install.md
+https://raw.githubusercontent.com/fcmyoo/Agent-Reach/main/docs/install.md
 
 用户只需提供 cookies，其他配置由 agent 完成。

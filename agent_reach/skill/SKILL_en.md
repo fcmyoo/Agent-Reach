@@ -17,7 +17,7 @@ description: >
   internet content); posting/commenting/liking (write operations); platforms
   that already have a dedicated skill installed (prefer that skill).
 metadata:
-  homepage: https://github.com/Panniantong/Agent-Reach
+  homepage: https://github.com/fcmyoo/Agent-Reach
 ---
 
 # Agent Reach — internet capability router
@@ -43,7 +43,7 @@ these platforms — do not invent your own approach.**
    multi-platform task, run `agent-reach check-update` (fast, one API call).
    If a new version exists, append one line to your wrap-up: "Agent Reach
    vX.Y.Z is available — paste this to me to update: 帮我更新 Agent Reach：
-   https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/update.md".
+   https://raw.githubusercontent.com/fcmyoo/Agent-Reach/main/docs/update.md".
    Never interrupt the current task to update; never nag about the same version twice.
 
 ## Routing table
@@ -147,6 +147,6 @@ chains — note: reference docs are written in Chinese, commands are universal):
 ## Configure a channel
 
 If a channel needs setup, fetch the install guide:
-https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/install.md
+https://raw.githubusercontent.com/fcmyoo/Agent-Reach/main/docs/install.md
 
 The user only provides cookies / one extension click; the agent does the rest.
