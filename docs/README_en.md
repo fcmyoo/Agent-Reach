@@ -10,13 +10,13 @@
 
 <p align="center">
   <a href="https://trendshift.io/repositories/24387"><img src="https://trendshift.io/api/badge/repositories/24387" alt="Trendshift GitHub Trending #1 Repository of the Day"></a>
-  <a href="https://star-history.com/#Panniantong/Agent-Reach&Date"><img src="https://api.star-history.com/badge?repo=Panniantong/Agent-Reach" alt="Star History Rank" width="196" height="55"></a>
+  <a href="https://star-history.com/#fcmyoo/Agent-Reach&Date"><img src="https://api.star-history.com/badge?repo=fcmyoo/Agent-Reach" alt="Star History Rank" width="196" height="55"></a>
 </p>
 
 <p align="center">
   <a href="../LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="MIT License"></a>
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10+-green.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+"></a>
-  <a href="https://github.com/Panniantong/agent-reach/stargazers"><img src="https://img.shields.io/github/stars/Panniantong/agent-reach?style=for-the-badge" alt="GitHub Stars"></a>
+  <a href="https://github.com/fcmyoo/Agent-Reach/stargazers"><img src="https://img.shields.io/github/stars/fcmyoo/Agent-Reach?style=for-the-badge" alt="GitHub Stars"></a>
 </p>
 
 <p align="center">
@@ -75,7 +75,7 @@ To connect your Agent to these platforms, you'd have to find tools, install depe
 **Agent Reach turns this into one command:**
 
 ```
-Install Agent Reach: https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/install.md
+Install Agent Reach: https://raw.githubusercontent.com/fcmyoo/Agent-Reach/main/docs/install.md
 ```
 
 Copy that to your Agent. A few minutes later, it can read tweets, search Reddit, and watch Bilibili.
@@ -83,7 +83,7 @@ Copy that to your Agent. A few minutes later, it can read tweets, search Reddit,
 **Already installed? Update in one command:**
 
 ```
-Update Agent Reach: https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/update.md
+Update Agent Reach: https://raw.githubusercontent.com/fcmyoo/Agent-Reach/main/docs/update.md
 ```
 
 ### ✅ Before you start, you might want to know
@@ -136,19 +136,19 @@ Update Agent Reach: https://raw.githubusercontent.com/Panniantong/agent-reach/ma
 Copy this to your AI Agent (Claude Code, OpenClaw, Cursor, etc.):
 
 ```
-Install Agent Reach: https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/install.md
+Install Agent Reach: https://raw.githubusercontent.com/fcmyoo/Agent-Reach/main/docs/install.md
 ```
 
 The Agent installs the Python package, checks your environment, and tells you what's ready. System-level changes require an explicit `--system` flag.
 
 > 🔄 **Already installed?** Update in one command:
 > ```
-> Update Agent Reach: https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/update.md
+> Update Agent Reach: https://raw.githubusercontent.com/fcmyoo/Agent-Reach/main/docs/update.md
 > ```
 
 > 🛡️ **Safe by default:** `agent-reach install` checks the machine without installing system packages or writing configuration:
 > ```
-> Safely check and install Agent Reach: https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/install.md
+> Safely check and install Agent Reach: https://raw.githubusercontent.com/fcmyoo/Agent-Reach/main/docs/install.md
 > ```
 > Use `agent-reach install --system` only after explicitly approving system changes.
 
@@ -156,7 +156,7 @@ The Agent installs the Python package, checks your environment, and tells you wh
 <summary>Manual install</summary>
 
 ```bash
-pip install https://github.com/Panniantong/agent-reach/archive/main.zip
+pip install https://github.com/fcmyoo/Agent-Reach/archive/main.zip
 agent-reach install --env=auto
 ```
 </details>
@@ -165,7 +165,7 @@ agent-reach install --env=auto
 <summary>Install as a Skill (Claude Code / OpenClaw / any agent with Skills support)</summary>
 
 ```bash
-npx skills add Panniantong/Agent-Reach@agent-reach
+npx skills add fcmyoo/Agent-Reach@agent-reach
 ```
 
 After the Skill is installed, the Agent will auto-detect whether `agent-reach` CLI is available and install it if needed.
@@ -318,7 +318,7 @@ For collaboration or questions, add me on WeChat — I'll invite you to the comm
   <img src="wechat-group-qr.jpg" width="280" alt="WeChat QR">
 </p>
 
-> For bug reports and feature requests, please use [GitHub Issues](https://github.com/Panniantong/Agent-Reach/issues) — easier to track.
+> For bug reports and feature requests, please use [GitHub Issues](https://github.com/fcmyoo/Agent-Reach/issues) — easier to track.
 
 ## License
 
@@ -332,4 +332,4 @@ For collaboration or questions, add me on WeChat — I'll invite you to the comm
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Panniantong/Agent-Reach&type=Date&v=20260309)](https://star-history.com/#Panniantong/Agent-Reach&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=fcmyoo/Agent-Reach&type=Date&v=20260309)](https://star-history.com/#fcmyoo/Agent-Reach&Date)

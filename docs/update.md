@@ -5,13 +5,13 @@
 Copy this to your AI Agent:
 
 ```
-帮我更新 Agent Reach：https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/update.md
+帮我更新 Agent Reach：https://raw.githubusercontent.com/fcmyoo/Agent-Reach/main/docs/update.md
 ```
 
 Or in English:
 
 ```
-Update Agent Reach: https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/update.md
+Update Agent Reach: https://raw.githubusercontent.com/fcmyoo/Agent-Reach/main/docs/update.md
 ```
 
 ---
@@ -37,12 +37,12 @@ If it says "已是最新版本", skip to Step 4 (verify). Otherwise continue.
 ### Step 2: Update Agent Reach package
 
 ```bash
-pip install --upgrade https://github.com/Panniantong/agent-reach/archive/main.zip
+pip install --upgrade https://github.com/fcmyoo/Agent-Reach/archive/main.zip
 ```
 
 > If pip complains about `externally-managed-environment` (PEP 668), the user
 > originally installed via pipx or a venv — use the matching command:
-> `pipx install --force https://github.com/Panniantong/agent-reach/archive/main.zip`
+> `pipx install --force https://github.com/fcmyoo/Agent-Reach/archive/main.zip`
 > or activate `~/.agent-reach-venv` first.
 
 ### Step 3: Refresh upstream tools

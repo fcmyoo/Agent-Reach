@@ -110,8 +110,13 @@ def test_youtube_warns_when_node_only_and_no_config(monkeypatch, tmp_path):
 
     monkeypatch.setattr("shutil.which", fake_which)
     monkeypatch.setattr("subprocess.run", _fake_run_ok)  # yt-dlp probe really executes now
-    # Point to a non-existent config file
-    monkeypatch.setattr("os.path.expanduser", lambda p: str(tmp_path / ".config/yt-dlp/config"))
+    # Isolate yt-dlp config lookup from the real machine.
+    # get_ytdlp_config_path() reads %APPDATA% on Windows and Path.home() on
+    # macOS/Linux (it never calls os.path.expanduser), so pin BOTH sources to
+    # tmp_path — otherwise a real local config containing "--js-runtimes node"
+    # (common on dev machines) flips the expected "warn" into "ok".
+    monkeypatch.setenv("APPDATA", str(tmp_path / "AppData" / "Roaming"))
+    monkeypatch.setattr("agent_reach.utils.paths.Path.home", lambda: tmp_path)
 
     ch = YouTubeChannel()
     status, message = ch.check()
