@@ -146,7 +146,15 @@ fi
 printf '%s\n' "$PIP_OUTPUT" | tail -1
 echo ""
 
-# ── 3. 自动配置 ──
+# ── 3. 只读命令校验（上游 test_integration_script.py 会读取下面这段嵌入检查） ──
+echo "🔎 校验只读命令的 JSON 输出..."
+agent-reach channels > "$TEST_DIR/channels.json"
+python -c 'import json,sys; d=json.load(open(sys.argv[1], encoding="utf-8")); assert d["ok"] and d["channels"], d; print("channels OK: {}".format(len(d["channels"])))' "$TEST_DIR/channels.json"
+agent-reach doctor > "$TEST_DIR/doctor.json"
+python -c 'import json,sys; d=json.load(open(sys.argv[1], encoding="utf-8")); assert "ok" in d, d; print("doctor OK")' "$TEST_DIR/doctor.json"
+echo ""
+
+# ── 4. 自动配置 ──
 echo "⚙️  运行 setup（1.6 起 setup 会装默认渠道并刷新 skill）..."
 if ! command -v agent-reach >/dev/null 2>&1; then
     echo "错误：安装完成但 PATH 中没有 agent-reach；请检查 venv 激活脚本。" >&2
@@ -155,12 +163,12 @@ fi
 agent-reach setup 2>&1 | head -20
 echo ""
 
-# ── 4. 诊断 ──
+# ── 5. 诊断 ──
 echo "🩺 运行 doctor（JSON）..."
 agent-reach doctor 2>&1 | head -30
 echo ""
 
-# ── 5. 逐个测试 ──
+# ── 6. 逐个测试 ──
 PASS=0
 FAIL=0
 SKIP=0
@@ -204,7 +212,7 @@ echo "════════════════════════�
 echo "  ✅ 通过: $PASS   ❌ 失败: $FAIL   ⏭️  跳过: $SKIP"
 echo "════════════════════════════════════════════"
 
-# ── 6. pytest 全量回归 ──
+# ── 7. pytest 全量回归 ──
 echo ""
 echo "🧪 运行 pytest 全量测试..."
 if "$VENV_PYTHON" -m pytest "$REPO_ROOT/tests" -q 2>&1 | tail -5; then
