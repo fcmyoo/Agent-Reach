@@ -1,0 +1,20 @@
+# Agent Reach — 换行符规范化
+# 声明式统一换行符处理，跨 Windows/macOS/Linux 一致，不依赖各机器的 core.autocrlf 设置，
+# 从根本上消除 git status 中因 CRLF/LF 差异产生的"假改动"。
+
+# 所有文本文件在入库时自动规范化为 LF。
+* text=auto
+
+# Shell 脚本必须始终使用 LF（它们要在 Linux/macOS/CI 的 bash 下运行，CRLF 会导致 \r 报错）。
+*.sh text eol=lf
+
+# 显式标记常见二进制格式，Git 永不改动其字节。
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.zip binary

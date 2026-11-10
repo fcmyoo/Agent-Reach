@@ -10,7 +10,7 @@ description: >
   Does not: post, comment, like, message or any other write; never logs in for the user or asks for passwords.
   Prefer your own tools for public content; Reach fills the gaps.
 metadata:
-  homepage: https://github.com/Panniantong/Agent-Reach
+  homepage: https://github.com/fcmyoo/Agent-Reach
   version: "{{VERSION}}"
 ---
 

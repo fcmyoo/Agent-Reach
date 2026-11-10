@@ -9,7 +9,7 @@ description: >
   不做：发帖、评论、点赞、私信等任何写操作；不替用户登录、不索要密码。
   公开内容优先用 Agent 自带工具，Reach 补缺口。
 metadata:
-  homepage: https://github.com/Panniantong/Agent-Reach
+  homepage: https://github.com/fcmyoo/Agent-Reach
   version: "{{VERSION}}"
 ---
 
